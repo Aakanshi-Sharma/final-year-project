@@ -71,9 +71,9 @@ resultant_url = st.text_input("Enter the URL")
 
 if st.button("Click here...", type="primary"):
     with st.spinner('Wait for it...'):
-        asd=(FeatureExtraction(resultant_url))
-        x = np.array(asd.getFeaturesList()).reshape(1, 30)
-        st.write(x)
+        # asd=(FeatureExtraction(resultant_url))
+        # x = np.array(asd.getFeaturesList()).reshape(1, 30)
+        # st.write(x)
         res = check_url(resultant_url)
         if res[0] == -1:
             st.error("Unsafe 🚨" + " The risk factor is {0:.2f} % .".format(res[1]))
